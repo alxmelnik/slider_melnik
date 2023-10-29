@@ -1,4 +1,4 @@
-let sliderContent = document.querySelector(".slider__content");
+let sliderImage = document.querySelector(".slider__image");
 let controlPrev = document.querySelector(".control__prev");
 let controlNext = document.querySelector(".control__next");
 
@@ -11,7 +11,7 @@ let photoGalery = [
   "./img/котик6.jpg",
 ];
 
-console.log(sliderContent, controlPrev, controlNext, photoGalery);
+console.log(sliderImage, controlPrev, controlNext, photoGalery);
 
 let imageIndex = 0;
 
@@ -22,7 +22,9 @@ function showNextImage() {
     imageIndex += 1;
   }
 
-  console.log(imageIndex);
+  sliderImage.setAttribute("src", photoGalery[imageIndex]);
+
+  // console.log(imageIndex);
 }
 
 function showPrevImage() {
@@ -32,7 +34,9 @@ function showPrevImage() {
     imageIndex -= 1;
   }
 
-  console.log(imageIndex);
+  sliderImage.setAttribute("src", photoGalery[imageIndex]);
+
+  // console.log(imageIndex);
 }
 
 controlPrev.addEventListener("click", showPrevImage);
