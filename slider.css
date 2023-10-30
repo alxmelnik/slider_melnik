@@ -46,6 +46,7 @@ button {
   padding: 0 1%;
   cursor: pointer;
   color: #fff;
+  font-size: 4rem;
 }
 
 .control:hover {
