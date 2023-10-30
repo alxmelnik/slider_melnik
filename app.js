@@ -14,8 +14,6 @@ let photoGalery = [
 
 const WIDTH_IMAGE = 90   // брать ширину из css .slider__content
 
-console.log(sliderImage, controlPrev, controlNext, photoGalery);
-
 let imageIndex = 0;
 
 function showNextImage() {
@@ -32,7 +30,6 @@ function showNextImage() {
 
   // sliderImage.setAttribute("src", photoGalery[imageIndex]);
 
-  // console.log(imageIndex);
 }
 
 function showPrevImage() {
@@ -47,7 +44,6 @@ function showPrevImage() {
 
   // sliderImage.setAttribute("src", photoGalery[imageIndex]);
 
-  // console.log(imageIndex);
 }
 
 controlPrev.addEventListener("click", showPrevImage);
