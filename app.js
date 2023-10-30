@@ -52,3 +52,5 @@ function showPrevImage() {
 
 controlPrev.addEventListener("click", showPrevImage);
 controlNext.addEventListener("click", showNextImage);
+
+setInterval(showNextImage, 4500);
